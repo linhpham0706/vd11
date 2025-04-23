@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Thay thế node</title>
+</head>
+<body>
+
+  <div id="container">
+    <p id="p1">hello</p>
+    <p id="p2">rất vui được gặp</p>
+
+    <button onclick="changenode()">Change Node</button>
+
+    <script>
+      function changenode() {
+        var node = document.createElement('div');
+        node.innerText = "lời đầu tiên cũng là lời kết thúc :Đ ";
+
+        var x = document.getElementById('container');
+        var y = document.getElementById('p2');
+
+        x.replaceChild(node, y);
+      }
+    </script>
+  </div>
+
+</body>
+</html>
